@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3 Rituales de Calma para Mujeres que Necesitan Parar</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@400;700&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Lato', sans-serif;
+            line-height: 1.6;
+            color: #4a4a4a;
+            background: linear-gradient(135deg, #FFFAF0 0%, #FFF5E6 100%);
+            scroll-behavior: smooth;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 10px 60px rgba(0,0,0,0.08);
+        }
+        
+        /* PORTADA */
+        .cover {
+            background: linear-gradient(135deg, #D4A574 0%, #E8C19F 100%);
+            color: white;
+            padding: 80px 40px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .cover::before {
+            content: '🍂';
+            position: absolute;
+            font-size: 150px;
+            opacity: 0.08;
+            top: -30px;
+            right: -30px;
+            animation: float 4s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+        
+        .cover-emoji {
+            font-size: 80px;
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+        
+        .cover h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 48px;
+            margin-bottom: 20px;
+            line-height: 1.2;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .cover .subtitle {
+            font-size: 20px;
+            opacity: 0.95;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+        
+        .cover-footer {
+            font-size: 16px;
+            opacity: 0.9;
+            margin-top: 50px;
+            border-top: 1px solid rgba(255,255,255,0.3);
+            padding-top: 20px;
+        }
+        
+        .cover-footer strong {
+            display: block;
+            margin-bottom: 5px;
+        }
+        
+        /* PAGINAS */
+        .page {
+            padding: 60px 50px;
+            border-bottom: 1px solid #f0f0f0;
+            page-break-after: always;
+        }
+        
+        .page:last-child {
+            border-bottom: none;
+        }
+        
+        .page-header {
+            font-family: 'Playfair Display', serif;
+            font-size: 42px;
+            color: #8B6F47;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .page-header-emoji {
+            font-size: 50px;
+        }
+        
+        .page-intro {
+            font-size: 16px;
+            color: #8B6F47;
+            margin-bottom: 35px;
+            font-style: italic;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .page p {
+            font-size: 17px;
+            line-height: 1.8;
+            margin-bottom: 20px;
+            color: #555;
+        }
+        
+        .page strong {
+            color: #8B6F47;
+        }
+        
+        .highlight-box {
+            background: linear-gradient(135deg, #FFF9E6 0%, #FFF5CC 100%);
+            border-left: 5px solid #E8C19F;
+            padding: 25px;
+            margin: 30px 0;
+            border-radius: 8px;
+            font-size: 16px;
+            line-height: 1.7;
+        }
+        
+        .highlight-box strong {
+            color: #8B6F47;
+            display: block;
+            margin-bottom: 10px;
+            font-size: 17px;
+        }
+        
+        .arrow {
+            color: #D4A574;
+            margin-right: 8px;
+        }
+        
+        .ritual-container {
+            background: #FFFAF0;
+            padding: 35px;
+            border-radius: 12px;
+            margin: 30px 0;
+            border: 1px solid #E8C19F;
+        }
+        
+        .ritual-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 26px;
+            color: #8B6F47;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        
+        .ritual-icon {
+            font-size: 32px;
+        }
+        
+        .recipe {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 15px 0;
+            border-left: 4px solid #D4A574;
+        }
+        
+        .ingredient {
+            display: flex;
+            align-items: flex-start;
+            margin: 12px 0;
+            font-size: 16px;
+        }
+        
+        .ingredient-icon {
+            font-size: 24px;
+            margin-right: 15px;
+            min-width: 30px;
+        }
+        
+        .ingredient-text {
+            line-height: 1.5;
+        }
+        
+        .steps {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            border-left: 4px solid #D4A574;
+        }
+        
+        .step {
+            display: flex;
+            margin: 15px 0;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        
+        .step-number {
+            background: linear-gradient(135deg, #8B6F47 0%, #D4A574 100%);
+            color: white;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            margin-right: 15px;
+            flex-shrink: 0;
+            font-size: 14px;
+        }
+        
+        .step-text {
+            padding-top: 5px;
+        }
+        
+        .affirmation {
+            background: linear-gradient(135deg, #E8C19F 0%, #D4A574 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 12px;
+            text-align: center;
+            margin: 25px 0;
+            font-size: 18px;
+            font-style: italic;
+            line-height: 1.6;
+        }
+        
+        .tip {
+            background: #F5F5F5;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            border-left: 4px solid #8B6F47;
+            font-size: 16px;
+            line-height: 1.7;
+        }
+        
+        .tip strong {
+            color: #8B6F47;
+        }
+        
+        .divider {
+            text-align: center;
+            font-size: 24px;
+            color: #D4A574;
+            margin: 30px 0;
+        }
+        
+        /* CIERRE */
+        .final-page {
+            background: linear-gradient(135deg, #FFFAF0 0%, #FFF5E6 100%);
+        }
+        
+        .final-content {
+            text-align: center;
+        }
+        
+        .final-content h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 40px;
+            color: #8B6F47;
+            margin-bottom: 30px;
+        }
+        
+        .final-content p {
+            font-size: 17px;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+        
+        .retiro-box {
+            background: linear-gradient(135deg, #8B6F47 0%, #D4A574 100%);
+            color: white;
+            padding: 35px;
+            border-radius: 12px;
+            margin: 40px 0;
+        }
+        
+        .retiro-box h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 28px;
+            margin-bottom: 15px;
+        }
+        
+        .retiro-details {
+            text-align: left;
+            display: inline-block;
+            margin: 20px 0;
+        }
+        
+        .retiro-details p {
+            text-align: left;
+            font-size: 16px;
+            margin: 8px 0;
+        }
+        
+        .quote {
+            font-style: italic;
+            font-size: 20px;
+            color: #8B6F47;
+            text-align: center;
+            margin: 40px 0;
+            padding: 30px;
+            border-top: 2px solid #D4A574;
+            border-bottom: 2px solid #D4A574;
+            line-height: 1.8;
+        }
+        
+        /* NAVEGACION */
+        .nav-buttons {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background: #f9f9f9;
+            position: sticky;
+            bottom: 0;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        
+        .nav-button {
+            background: linear-gradient(135deg, #8B6F47 0%, #D4A574 100%);
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+        
+        .nav-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(139, 111, 71, 0.3);
+        }
+        
+        .page-counter {
+            color: #8B6F47;
+            font-weight: bold;
+            font-size: 16px;
+            min-width: 80px;
+            text-align: center;
+        }
+        
+        @media (max-width: 768px) {
+            .page {
+                padding: 40px 30px;
+            }
+            
+            .page-header {
+                font-size: 32px;
+            }
+            
+            .cover {
+                padding: 50px 30px;
+            }
+            
+            .cover h1 {
+                font-size: 36px;
+            }
+            
+            .nav-buttons {
+                padding: 15px 20px;
+            }
+        }
+        
+        .page-separator {
+            height: 40px;
+            background: linear-gradient(90deg, transparent, #D4A574, transparent);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        
+        .page-separator::after {
+            content: '✦';
+            color: #D4A574;
+            font-size: 24px;
+            background: white;
+            padding: 0 15px;
+        }
+    </style>
+</head>
+<body>
+    <!-- PORTADA -->
+    <div class="container">
+        <div class="cover">
+            <div class="cover-emoji">🌿</div>
+            <h1>3 Rituales de Calma para Mujeres que Necesitan Parar</h1>
+            <p class="subtitle">Mini prácticas de Ayurveda, Yoga y Autocuidado para reconectar contigo misma en solo 10 minutos al día.</p>
+            <div class="cover-footer">
+                <strong>✨ Una guía creada con amor</strong>
+                <p>Creadora de Respira Otoño · Convento La Parra (Badajoz)</p>
+                <p>28–30 noviembre · Un retiro para descansar de verdad y volver a ti.</p>
+            </div>
+        </div>
+        
+        <!-- PAGINA 2 INTRODUCCIÓN -->
+        <div class="page">
+            <div class="page-header">
+                <span class="page-header-emoji">🌙</span>
+                <span>No necesitas más fuerza. Solo más calma.</span>
+            </div>
+            
+            <p>Durante años viví corriendo: haciendo listas, cumpliendo, sosteniendo todo.</p>
+            <p>Por fuera parecía tenerlo todo bajo control, pero por dentro sentía cansancio, ansiedad y una desconexión profunda.</p>
+            <p>Hasta que un día entendí algo esencial:</p>
+            
+            <div class="highlight-box">
+                <div><span class="arrow">👉</span> El descanso no es un lujo.</div>
+                <div style="margin-top: 10px;"><span class="arrow">👉</span> No necesitas ganártelo.</div>
+                <div style="margin-top: 10px;"><span class="arrow">👉</span> Es una forma de amor propio.</div>
+            </div>
+            
+            <p>Esta guía es un recordatorio para que empieces a volver a ti, con gestos simples y rituales que nutren cuerpo, mente y alma.</p>
+            
+            <p><strong>🌿 Dedícale unos minutos cada día.</strong></p>
+            <p><strong>Si puedes respirar, puedes comenzar hoy.</strong></p>
+        </div>
+        
+        <div class="page-separator"></div>
+        
+        <!-- PAGINA 3 RITUAL 1 -->
+        <div class="page">
+            <div class="page-header">
+                <span class="page-header-emoji">🍃</span>
+                <span>Ritual de Calma Matinal</span>
+            </div>
+            <p class="page-intro">"Empieza el día equilibrando tu energía."</p>
+            
+            <p>En Ayurveda, el equilibrio de los tres doshas (Vata, Pitta y Kapha) es clave para la armonía interior.</p>
+            <p>Esta infusión ayuda a despertar el cuerpo suavemente, calmar la mente y alinear tu energía.</p>
+            
+            <div class="ritual-container">
+                <div class="ritual-title">
+                    <span class="ritual-icon">🫚</span>
+                    Receta: Infusión Equilibrante
+                </div>
+                
+                <div class="recipe">
+                    <div class="ingredient">
+                        <span class="ingredient-icon">🫚</span>
+                        <span class="ingredient-text"><strong>½ cucharadita de jengibre fresco rallado</strong> - Despierta la digestión y el cuerpo</span>
+                    </div>
+                    <div class="ingredient">
+                        <span class="ingredient-icon">🌸</span>
+                        <span class="ingredient-text"><strong>½ cucharadita de canela</strong> - Estabiliza el azúcar y calma</span>
+                    </div>
+                    <div class="ingredient">
+                        <span class="ingredient-icon">💫</span>
+                        <span class="ingredient-text"><strong>1 pizca de cardamomo</strong> - Abre el corazón y la claridad mental</span>
+                    </div>
+                    <div class="ingredient">
+                        <span class="ingredient-icon">💧</span>
+                        <span class="ingredient-text"><strong>1 taza de agua</strong> - Base de toda sanación</span>
+                    </div>
+                </div>
+                
+                <div class="steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div class="step-text">Hierve el agua en una olla pequeña</div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-text">Agrega el jengibre, canela y cardamomo</div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div class="step-text">Hierve todo durante 3 minutos</div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <div class="step-text">Cuela en tu taza favorita</div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">5</div>
+                        <div class="step-text">Bebe despacio, sintiendo el calor en tu cuerpo y el aroma</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="affirmation">
+                "Me doy permiso para comenzar el día con calma."
+            </div>
+            
+            <div class="tip">
+                <strong>💡 Consejo:</strong> Haz este ritual sentada, sin prisa. Tu teléfono puede esperar 5 minutos. Tú, no.
+            </div>
+        </div>
+        
+        <div class="page-separator"></div>
+        
+        <!-- PAGINA 4 RITUAL 2 -->
+        <div class="page">
+            <div class="page-header">
+                <span class="page-header-emoji">🌬️</span>
+                <span>Ritual de Respiración Consciente</span>
+            </div>
+            <p class="page-intro">"Tres minutos para reiniciar tu mente."</p>
+            
+            <p>La respiración es el puente entre tu cuerpo y tu mente. Cuando respiras con intención, todo cambia.</p>
+            
+            <div class="ritual-container">
+                <div class="ritual-title">
+                    <span class="ritual-icon">🌞</span>
+                    La Técnica: Respiración 4-4-6
+                </div>
+                
+                <div class="steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div class="step-text"><strong>Siéntate cómoda</strong> (en el sofá, en la cama, donde quieras)</div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-text"><strong>Cierra los ojos suavemente</strong></div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div class="step-text"><strong>Apoya una mano en tu abdomen</strong></div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <div class="step-text"><strong>Inhala profundamente por la nariz</strong> (cuento: 1-2-3-4 segundos)</div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">5</div>
+                        <div class="step-text"><strong>Retén el aire</strong> (cuento: 1-2-3-4 segundos)</div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">6</div>
+                        <div class="step-text"><strong>Exhala lentamente por la boca</strong> (cuento: 1-2-3-4-5-6 segundos)</div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">7</div>
+                        <div class="step-text"><strong>Repite durante 3 minutos</strong> (aproximadamente 10-12 ciclos)</div>
+                    </div>
+                </div>
+            </div>
+            
+            <p style="margin-top: 25px; font-size: 16px; line-height: 1.8; color: #555;">Este pequeño espacio entre inhalar y exhalar te conecta con el presente. Cada respiración es un recordatorio de que no hay nada que demostrar, solo sentir.</p>
+            
+            <div class="affirmation">
+                "No tengo prisa. Estoy segura aquí."
+            </div>
+            
+            <div class="tip">
+                <strong>💡 Consejo:</strong> Si tu mente vuela (que volará), está bien. No la pelees. Solo vuelve a la respiración. Una vez. Otra vez. Infinitas veces. Eso es meditación.
+            </div>
+        </div>
+        
+        <div class="page-separator"></div>
+        
+        <!-- PAGINA 5 RITUAL 3 -->
+        <div class="page">
+            <div class="page-header">
+                <span class="page-header-emoji">🕯️</span>
+                <span>Ritual de Cuidado Nocturno</span>
+            </div>
+            <p class="page-intro">"Cierra el día volviendo a tu cuerpo."</p>
+            
+            <p>El automasaje ayurvédico (Abhyanga) es una práctica ancestral que nos devuelve a nosotras mismas. No es lujo. Es medicina.</p>
+            
+            <div class="ritual-container">
+                <div class="ritual-title">
+                    <span class="ritual-icon">💆‍♀️</span>
+                    Masaje Ayurvédico (Abhyanga)
+                </div>
+                
+                <div class="recipe">
+                    <strong style="display: block; margin-bottom: 15px; color: #8B6F47;">Qué necesitas:</strong>
+                    <div class="ingredient">
+                        <span class="ingredient-icon">🧴</span>
+                        <span class="ingredient-text"><strong>Aceite de sésamo o coco tibio</strong> (caliéntalo ligeramente en tus manos o en un baño maría)</span>
+                    </div>
+                    <div class="ingredient">
+                        <span class="ingredient-icon">⏱️</span>
+                        <span class="ingredient-text"><strong>5-10 minutos</strong> de tu tiempo sagrado</span>
+                    </div>
+                    <div class="ingredient">
+                        <span class="ingredient-icon">💫</span>
+                        <span class="ingredient-text"><strong>Intención de autocuidado</strong> (lo más importante)</span>
+                    </div>
+                </div>
+                
+                <div class="steps">
+                    <strong style="display: block; margin-bottom: 15px; color: #8B6F47;">Pasos:</strong>
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div class="step-text">Calienta el aceite entre tus manos</div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-text">Masajea tus pies con movimientos circulares y presión suave</div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div class="step-text">Sube por las piernas y muslos con movimientos hacia arriba</div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <div class="step-text">En el abdomen: movimientos circulares en el sentido de las agujas del reloj</div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">5</div>
+                        <div class="step-text">Respira profundamente mientras tocas tu cuerpo</div>
+                    </div>
+                </div>
+            </div>
+            
+            <p style="margin-top: 25px; font-size: 16px; line-height: 1.8; color: #555;"><strong>💫 Lo más importante:</strong> No necesitas hacerlo perfecto. Solo con la intención de cuidarte, el cuerpo empieza a confiar otra vez. Este es un acto revolucionario en una sociedad que te pide más.</p>
+            
+            <div class="affirmation">
+                "A través del tacto, me reconozco y me sostengo."
+            </div>
+            
+            <div class="tip">
+                <strong>💡 Consejo:</strong> Hazlo 20-30 minutos antes de dormir. Después, date una ducha tibia o vete a la cama. Tu sistema nervioso descenderá. Tu sueño será profundo. Confía en tu cuerpo.
+            </div>
+        </div>
+        
+        <div class="page-separator"></div>
+        
+        <!-- PAGINA CIERRE -->
+        <div class="page final-page">
+            <div class="final-content">
+                <div class="quote">
+                    "Tu calma es solo el comienzo."
+                </div>
+                
+                <p style="margin-top: 40px; font-size: 17px; line-height: 1.8;">Si estos rituales te han devuelto un poco de presencia,<br>imagina lo que pueden hacer 3 días de descanso, silencio y conexión profunda.</p>
+                
+                <div class="retiro-box">
+                    <h3>🍂 Respira Otoño</h3>
+                    <p style="font-size: 16px; margin: 15px 0;">Un retiro en el Convento La Parra, Badajoz</p>
+                    
+                    <div class="retiro-details">
+                        <p>🧘‍♀️ <strong>Yoga</strong> al amanecer y al atardecer</p>
+                        <p>🌿 <strong>Meditaciones, automasaje y cocina consciente</strong></p>
+                        <p>🏔️ <strong>Ruta de senderismo</strong> a castillos en otoño</p>
+                        <p>👭 <strong>Círculo de mujeres</strong> para conexión profunda</p>
+                        <p>💫 <strong>28–30 de noviembre</strong> · Solo 8 plazas</p>
+                    </div>
+                </div>
+                
+                <p style="margin-top: 30px; font-size: 18px; line-height: 1.8;"><strong>👉 Descubre más o reserva tu espacio</strong></p>
+                
+                <div class="quote" style="margin-top: 40px; border: none; background: none; text-align: center;">
+                    "✨ El descanso no se pospone. Se elige."
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- NAVEGACION -->
+    <div class="nav-buttons">
+        <button class="nav-button" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">↑ Arriba</button>
+        <span class="page-counter">Guía Completa</span>
+        <button class="nav-button" onclick="window.print()">🖨️ Descargar PDF</button>
+    </div>
+</body>
+</html>
